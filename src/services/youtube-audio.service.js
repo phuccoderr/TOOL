@@ -70,6 +70,7 @@ export class YoutubeAudioService {
           socketTimeout: Math.ceil(this.#timeoutMs / 1000),
           maxFilesize: "100M",
           // cookiesFromBrowser: "chrome",
+          extractorArgs: "youtube:player_client=ios,web",
         },
         { timeout: this.#timeoutMs },
       );
