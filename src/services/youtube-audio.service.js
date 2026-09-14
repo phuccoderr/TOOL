@@ -69,7 +69,7 @@ export class YoutubeAudioService {
           restrictFilenames: true,
           socketTimeout: Math.ceil(this.#timeoutMs / 1000),
           maxFilesize: "100M",
-          cookiesFromBrowser: "chrome",
+          // cookiesFromBrowser: "chrome",
         },
         { timeout: this.#timeoutMs },
       );
