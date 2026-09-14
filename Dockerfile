@@ -1,5 +1,7 @@
 FROM node:20-bookworm-slim
 
+ENV DEBIAN_FRONTEND=noninteractive
+
 # 1. Cài đặt ffmpeg và curl, sau đó tải thẳng file thực thi độc lập của yt-dlp về /usr/local/bin/yt-dlp
 RUN apt-get update \
   && apt-get install -y --no-install-recommends ffmpeg curl ca-certificates \
